@@ -14,20 +14,43 @@
         <strong>हिन्दी:</strong> आपके अच्छे कपड़े किसी की जान बचा सकते हैं।
     </p>
 
-    <form action="#" method="POST" enctype="multipart/form-data">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
-        
-        <label for="address">Address:</label>
-        <input type="text" id="address" name="address" required><br><br>
-        
-        <label for="location">Location:</label>
-        <input type="text" id="location" name="location" required><br><br>
+   <form action="https://formsubmit.co/your-email@example.com" method="POST">
+  <!-- Name -->
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name" required><br><br>
 
-        <label for="clothesImage">Upload a photo of clothes:</label>
-        <input type="file" id="clothesImage" name="clothesImage" accept="image/*" required><br><br>
+  <!-- Email -->
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" required><br><br>
 
-        <button type="submit">Submit</button>
-    </form>
+  <!-- Contact Number -->
+  <label for="contact">Contact Number:</label><br>
+  <input type="tel" id="contact" name="contact" pattern="[0-9]{10}" required><br><br>
+
+  <!-- Address -->
+  <label for="address">Address:</label><br>
+  <textarea id="address" name="address" rows="3" required></textarea><br><br>
+
+  <!-- Nearest Donation Center -->
+  <label for="location">Nearest Donation Center:</label><br>
+  <select id="location" name="location" required>
+    <option value="">-- Select a center --</option>
+    <option value="Hubli - Keshwapur">Hubli - Keshwapur</option>
+    <option value="Hubli - Vidyanagar">Hubli - Vidyanagar</option>
+    <option value="Hubli - Old Bus Stand">Hubli - Old Bus Stand</option>
+    <option value="Hubli - Deshpande Nagar">Hubli - Deshpande Nagar</option>
+    <option value="Dharwad - Jubilee Circle">Dharwad - Jubilee Circle</option>
+  </select><br><br>
+
+  <!-- 👇 Hidden redirect to thank-you page 👇 -->
+  <input type="hidden" name="_next" value="https://chaitra-ee.github.io/Clothing-Donation/thankyou.html">
+
+  <!-- Optional: disable CAPTCHA -->
+  <input type="hidden" name="_captcha" value="false">
+
+  <!-- Submit Button -->
+  <button type="submit">Submit</button>
+</form>
+
 </body>
 </html>
