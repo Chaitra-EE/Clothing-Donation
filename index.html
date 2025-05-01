@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Donation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Donate Clothes, Save Lives</h1>
+    <p>
+        <strong>English:</strong> Your good-condition clothes can help someone survive the winter.<br>
+        <strong>ಕನ್ನಡ:</strong> ನಿಮ್ಮ ಉತ್ತಮ ಸ್ಥಿತಿಯ ಉಡುಪುಗಳು ಯಾರಾದರೊಬ್ಬರ ಜೀವ ಉಳಿಸಬಹುದು.<br>
+        <strong>हिन्दी:</strong> आपके अच्छे कपड़े किसी की जान बचा सकते हैं।
+    </p>
+
+    <form action="#" method="POST" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required><br><br>
+        
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required><br><br>
+
+        <label for="clothesImage">Upload a photo of clothes:</label>
+        <input type="file" id="clothesImage" name="clothesImage" accept="image/*" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
